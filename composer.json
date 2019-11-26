@@ -1,0 +1,39 @@
+{
+  "name": "woda/wp-admin-options",
+  "description": "",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "assets"
+  ],
+  "license": "GPLv2 or later",
+  "homepage": "https://github.com/davidmondok/wp-plugin-woda-admin-options",
+  "authors": [
+    {
+      "name": "Woda",
+      "email": "hello@woda.at",
+      "homepage": "https://www.woda.at"
+    },
+    {
+      "name": "David Mondok",
+      "email": "david@woda.at"
+    },
+    {
+      "name": "Wolfgang Schäfer",
+      "email": "wolfgang@woda.at"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "support": {
+    "issues": "https://github.com/wwwoda/wp-plugin-admin-options/issues",
+    "source": "https://github.com/wwwoda/wp-plugin-admin-options"
+  },
+  "require": {
+    "yahnis-elsts/plugin-update-checker": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Woda\\WordPress\\AdminOptions\\": "includes/"
+    }
+  }
+}
