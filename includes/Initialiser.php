@@ -55,6 +55,8 @@ final class Initialiser
      */
     public function renderSettingsPage(): void
     {
+        $githubAccessToken = get_option(self::$optionKeyGithubAccessToken);
+        $googleMapsKey = get_option(self::$optionKeyGoogleMapsKey);
         ?>
             <div class="wrap">
                 <h1>Woda Admin Settings</h1>
@@ -64,11 +66,11 @@ final class Initialiser
                     <table class="form-table">
                         <tr>
                             <th scope="row">GitHub Access Token</th>
-                            <td><input type="password" name="<?php echo esc_attr(self::$optionKeyGithubAccessToken); ?>" value="<?php echo esc_attr(self::$optionKeyGithubAccessToken); ?>" /></td>
+                            <td><input type="password" name="<?php echo esc_attr(self::$optionKeyGithubAccessToken); ?>" value="<?php echo $githubAccessToken; ?>" /></td>
                         </tr>
                         <tr>
                             <th scope="row">Google Maps API Key</th>
-                            <td><input type="password" name="<?php echo esc_attr(self::$optionKeyGoogleMapsKey); ?>" value="<?php echo esc_attr(self::$optionKeyGoogleMapsKey); ?>" /></td>
+                            <td><input type="password" name="<?php echo esc_attr(self::$optionKeyGoogleMapsKey); ?>" value="<?php echo $googleMapsKey; ?>" /></td>
                         </tr>
                     </table>
                     <?php submit_button(); ?>
