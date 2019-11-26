@@ -23,15 +23,20 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // **********************************************************************
 
+namespace Woda\WordPress\AdminOptions;
+
+use Puc_v4_Factory;
+
 include_once 'vendor/autoload.php';
 
 add_action('init', static function (): void {
-    Woda\WordPress\AdminOptions\Initialiser::init();
+    $initialiser = new Initialiser();
+    $initialiser->init();
 });
 
 $githubAccessToken = get_option('woda_admin_option_github_access_token');
 if (!empty($githubAccessToken)) {
-    $pluginUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    $pluginUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
         'https://github.com/wwwoda/wp-plugin-scripts-styles-loader/',
         __FILE__,
         'woda-admin-options'
