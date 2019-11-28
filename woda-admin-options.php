@@ -7,7 +7,7 @@
  * Author URI:      https://www.woda.at
  * Text Domain:     woda-admin-options
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.2
  *
  * @package         Woda_Adming_options
  */
@@ -37,7 +37,7 @@ add_action('init', static function (): void {
 $githubAccessToken = get_option('woda_admin_option_github_access_token');
 if (!empty($githubAccessToken)) {
     $pluginUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
-        'https://github.com/wwwoda/wp-plugin-scripts-styles-loader/',
+        'https://github.com/wwwoda/wp-woda-admin-options/',
         __FILE__,
         'woda-admin-options'
     );
