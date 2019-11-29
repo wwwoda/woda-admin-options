@@ -9,7 +9,7 @@
  * Domain Path:     /languages
  * Version:         0.1.2
  *
- * @package         Woda_Adming_options
+ * @package         Woda_Admin_Options
  */
 
 // Copyright (c) 2019 Woda Digital OG. All rights reserved.
