@@ -34,12 +34,13 @@ add_action('init', static function (): void {
     $initialiser->init();
 });
 
+$pluginUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/wwwoda/wp-woda-admin-options/',
+    __FILE__,
+    'woda-admin-options'
+);
+
 $githubAccessToken  = defined( 'GITHUB_ACCESS_TOKEN' ) ? GITHUB_ACCESS_TOKEN : get_option('woda_github_access_token');
 if (!empty($githubAccessToken)) {
-    $pluginUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
-        'https://github.com/wwwoda/wp-woda-admin-options/',
-        __FILE__,
-        'woda-admin-options'
-    );
     $pluginUpdateChecker->setAuthentication($githubAccessToken);
 }
