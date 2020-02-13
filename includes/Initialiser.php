@@ -7,9 +7,9 @@ final class Initialiser
     /** @var array  */
     public static $allowedEmailDomains = ['woda.at'];
     /** @var string  */
-    public static $optionKeyGithubAccessToken = 'woda_admin_option_github_access_token';
+    public static $optionKeyGithubAccessToken = 'woda_github_access_token';
     /** @var string  */
-    public static $optionKeyGoogleMapsKey = 'woda_admin_option_google_maps_api_key';
+    public static $optionKeyGoogleMapsKey = 'woda_google_maps_api_key';
 
     /**
      * Main function to initialize plugin
