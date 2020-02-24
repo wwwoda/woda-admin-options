@@ -1,15 +1,18 @@
 <?php
 /**
- * Plugin Name:     Woda Admin Options
- * Plugin URI:      https://github.com/davidmondok/wp-plugin-woda-admin-options
- * Description:     ...
- * Author:          Woda
- * Author URI:      https://www.woda.at
- * Text Domain:     woda-admin-options
- * Domain Path:     /languages
- * Version:         0.2.0
+ * Plugin Name:       Woda Admin Options
+ * Plugin URI:        https://github.com/wwwoda/wp-plugin-woda-admin-options
+ * Description:       ...
+ * Version:           0.2.1
+ * Author:            Woda
+ * Author URI:        https://www.woda.at
+ * License:           GNU General Public License v2
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+ * Domain Path:       /languages
+ * Text Domain:       woda-admin-options
+ * GitHub Plugin URI: https://github.com/wwwoda/wp-plugin-woda-admin-options
  *
- * @package         Woda_Admin_Options
+ * @package           Woda_Admin_Options
  */
 
 // Copyright (c) 2019 Woda Digital OG. All rights reserved.

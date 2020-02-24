@@ -3,7 +3,7 @@ Contributors: @davidmondok
 Tags: fonts, performance
 Requires at least: 4.5
 Tested up to: 5.3
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,5 +31,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Use constant GITHUB_ACCESS_TOKEN for updater if available
 * Change fallback option key to woda_github_access_token
 * Change option keys
+
+= 0.2.1 =
+* Add GitHub Plugin URI to plugin header
 
 `<?php code(); // goes in backticks ?>`
