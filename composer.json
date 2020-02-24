@@ -28,9 +28,7 @@
     "issues": "https://github.com/wwwoda/wp-plugin-admin-options/issues",
     "source": "https://github.com/wwwoda/wp-plugin-admin-options"
   },
-  "require": {
-    "yahnis-elsts/plugin-update-checker": "^4.9"
-  },
+  "require": {},
   "autoload": {
     "psr-4": {
       "Woda\\WordPress\\AdminOptions\\": "includes/"
