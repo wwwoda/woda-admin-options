@@ -6,10 +6,6 @@ final class Initialiser
 {
     /** @var array  */
     public static $allowedEmailDomains = ['woda.at'];
-    /** @var string  */
-    public static $optionKeyGithubAccessToken = 'woda_github_access_token';
-    /** @var string  */
-    public static $optionKeyGoogleMapsKey = 'woda_google_maps_api_key';
 
     /**
      * Main function to initialize plugin
@@ -45,46 +41,13 @@ final class Initialiser
      * Register WordPress options
      */
     public function registerSettings(): void
-    {
-        register_setting('woda-admin-options', self::$optionKeyGithubAccessToken);
-        register_setting('woda-admin-options', self::$optionKeyGoogleMapsKey);
-    }
+    {}
 
     /**
      * Render settings page
      */
     public function renderSettingsPage(): void
     {
-        $githubAccessToken = get_option(self::$optionKeyGithubAccessToken);
-        $googleMapsKey = get_option(self::$optionKeyGoogleMapsKey);
-        ?>
-            <div class="wrap">
-                <h1>Woda Admin Settings</h1>
-                <form method="post" action="options.php">
-                    <?php settings_fields('woda-admin-options'); ?>
-                    <?php do_settings_sections('woda-admin-options'); ?>
-                    <table class="form-table">
-                        <tr>
-                            <th scope="row">GitHub Access Token</th>
-                            <td><input
-                                    type="password"
-                                    name="<?php echo esc_attr(self::$optionKeyGithubAccessToken); ?>"
-                                    value="<?php echo $githubAccessToken; ?>"
-                                /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Google Maps API Key</th>
-                            <td><input
-                                    type="password"
-                                    name="<?php echo esc_attr(self::$optionKeyGoogleMapsKey); ?>"
-                                    value="<?php echo $googleMapsKey; ?>"
-                                /></td>
-                        </tr>
-                    </table>
-                    <?php submit_button(); ?>
-                </form>
-            </div>
-        <?php
     }
 
     /**
