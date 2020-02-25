@@ -26,11 +26,17 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // **********************************************************************
 
-namespace Woda\WordPress\AdminOptions;
+namespace Woda\WordPress;
 
 include_once 'vendor/autoload.php';
 
-add_action('init', static function (): void {
-    $initialiser = new Initialiser();
-    $initialiser->init();
-});
+$adminOptions = new AdminOptions();
+
+add_action('after_setup_theme', static function () use ($adminOptions): void {
+    $adminOptions->init();
+    \Carbon_Fields\Carbon_Fields::boot();
+} );
+
+add_action('carbon_fields_register_fields', static function () use ($adminOptions): void {
+    $adminOptions->registerContainerAndFields();
+}, 10);

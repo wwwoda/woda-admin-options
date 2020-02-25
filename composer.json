@@ -28,10 +28,12 @@
     "issues": "https://github.com/wwwoda/wp-plugin-admin-options/issues",
     "source": "https://github.com/wwwoda/wp-plugin-admin-options"
   },
-  "require": {},
+  "require": {
+    "htmlburger/carbon-fields": "^3.1"
+  },
   "autoload": {
     "psr-4": {
-      "Woda\\WordPress\\AdminOptions\\": "includes/"
+      "Woda\\WordPress\\": "includes/"
     }
   }
 }

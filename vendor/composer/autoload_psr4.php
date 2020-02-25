@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Woda\\WordPress\\AdminOptions\\' => array($baseDir . '/includes'),
+    'Woda\\WordPress\\' => array($baseDir . '/includes'),
+    'Carbon_Fields\\' => array($vendorDir . '/htmlburger/carbon-fields/core'),
 );
