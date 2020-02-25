@@ -30,7 +30,13 @@ namespace Woda\WordPress\AdminOptions;
 
 include_once 'vendor/autoload.php';
 
-add_action('init', static function (): void {
-    $initialiser = new Initialiser();
-    $initialiser->init();
-});
+$adminOptionsManager = new Manager();
+
+add_action('after_setup_theme', static function () use ($adminOptionsManager): void {
+    $adminOptionsManager->init();
+    \Carbon_Fields\Carbon_Fields::boot();
+} );
+
+add_action('carbon_fields_register_fields', static function () use ($adminOptionsManager): void {
+    $adminOptionsManager->registerContainerAndFields();
+}, 10);
