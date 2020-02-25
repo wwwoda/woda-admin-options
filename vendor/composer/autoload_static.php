@@ -9,7 +9,7 @@ class ComposerStaticInit51796118007873527d5704520a5b96fa
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
-            'Woda\\WordPress\\' => 15,
+            'Woda\\WordPress\\AdminOptions\\' => 28,
         ),
         'C' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInit51796118007873527d5704520a5b96fa
     );
 
     public static $prefixDirsPsr4 = array (
-        'Woda\\WordPress\\' => 
+        'Woda\\WordPress\\AdminOptions\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),

@@ -1,11 +1,11 @@
 <?php
 
-namespace Woda\WordPress;
+namespace Woda\WordPress\AdminOptions;
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-final class AdminOptions
+final class Manager
 {
     /** @var array */
     public static $allowedEmailDomains = [];

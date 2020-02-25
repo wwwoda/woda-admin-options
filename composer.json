@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Woda\\WordPress\\": "includes/"
+      "Woda\\WordPress\\AdminOptions\\": "includes/"
     }
   }
 }
