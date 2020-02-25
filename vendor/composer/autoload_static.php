@@ -11,12 +11,20 @@ class ComposerStaticInit51796118007873527d5704520a5b96fa
         array (
             'Woda\\WordPress\\AdminOptions\\' => 28,
         ),
+        'C' => 
+        array (
+            'Carbon_Fields\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Woda\\WordPress\\AdminOptions\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
+        ),
+        'Carbon_Fields\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/htmlburger/carbon-fields/core',
         ),
     );
 
