@@ -1,6 +1,6 @@
 By default, all administrators can access the options page.
 
-By using following filter you can limit access email addresses from certain domains. 
+Limit users' access to the options page by defining allowed email domains. 
 ```
 add_filter('woda_super_admin_allowed_email_domains', static function($addresses) {
     $addresses[] = 'woda.at';
