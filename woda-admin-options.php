@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name:       Woda Admin Options
- * Plugin URI:        https://github.com/wwwoda/woda-woda-admin-options
+ * Plugin URI:        https://github.com/wwwoda/woda-admin-options
  * Description:       ...
- * Version:           0.3.1
+ * Version:           0.3.2
  * Author:            Woda
  * Author URI:        https://www.woda.at
  * License:           GNU General Public License v2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
  * Domain Path:       /languages
  * Text Domain:       woda-admin-options
- * GitHub Plugin URI: https://github.com/wwwoda/woda-woda-admin-options
+ * GitHub Plugin URI: https://github.com/wwwoda/woda-admin-options
  * Release Asset:     true
  *
  * @package           Woda_Admin_Options
