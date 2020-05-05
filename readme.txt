@@ -3,7 +3,7 @@ Contributors: @davidmondok
 Tags: fonts, performance
 Requires at least: 4.5
 Tested up to: 5.3
-Stable tag: 0.3.2
+Stable tag: 0.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Add GitHub Plugin URI to plugin header
 
 = 0.3.0 =
+* Remove internal GitHub Updater logic
+
+= 0.4.0 =
 * Remove internal GitHub Updater logic
 
 `<?php code(); // goes in backticks ?>`

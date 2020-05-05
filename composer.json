@@ -1,5 +1,5 @@
 {
-  "name": "woda/admin-options",
+  "name": "woda/wp-admin-options",
   "description": "",
   "keywords": [
     "wordpress",
@@ -7,7 +7,7 @@
     "assets"
   ],
   "license": "GPLv2 or later",
-  "homepage": "https://github.com/davidmondok/woda-admin-options",
+  "homepage": "https://github.com/wwwoda/woda-admin-options",
   "authors": [
     {
       "name": "Woda",
@@ -29,6 +29,7 @@
     "source": "https://github.com/wwwoda/woda-admin-options"
   },
   "require": {
+    "php": ">=7.2.0",
     "htmlburger/carbon-fields": "^3.1"
   },
   "autoload": {

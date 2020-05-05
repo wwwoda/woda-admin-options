@@ -3,7 +3,7 @@
  * Plugin Name:       Woda Admin Options
  * Plugin URI:        https://github.com/wwwoda/woda-admin-options
  * Description:       ...
- * Version:           0.3.2
+ * Version:           0.4.0
  * Author:            Woda
  * Author URI:        https://www.woda.at
  * License:           GNU General Public License v2
@@ -31,13 +31,4 @@ namespace Woda\WordPress\AdminOptions;
 
 include_once 'vendor/autoload.php';
 
-$adminOptionsManager = new Manager();
-
-add_action('after_setup_theme', static function () use ($adminOptionsManager): void {
-    $adminOptionsManager->init();
-    \Carbon_Fields\Carbon_Fields::boot();
-} );
-
-add_action('carbon_fields_register_fields', static function () use ($adminOptionsManager): void {
-    $adminOptionsManager->registerContainerAndFields();
-}, 10);
+Init::init();
