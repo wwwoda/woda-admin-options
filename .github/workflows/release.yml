@@ -29,18 +29,17 @@ jobs:
             .DS_Store
             .editorconfig
             .eslint*
-            .git
-            .github
             .idea
             .phpcs.xml
             .phpcs.xml.dist
             .travis.yml
             .vscode
+            *.git*
+            *.lock
+            *.log
             *.sql
             *.tar.gz
             *.zip
-            *.lock
-            *.log
             behat.yml
             bin
             bitbucket-pipelines.yml
