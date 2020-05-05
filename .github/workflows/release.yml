@@ -29,7 +29,8 @@ jobs:
             .DS_Store
             .editorconfig
             .eslint*
-            .git*
+            .git
+            .github
             .idea
             .phpcs.xml
             .phpcs.xml.dist
