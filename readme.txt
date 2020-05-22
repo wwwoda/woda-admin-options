@@ -4,8 +4,8 @@ Tags: fonts, performance
 Requires at least: 4.5
 Tested up to: 5.3
 Stable tag: 0.4.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 ...
 
@@ -15,8 +15,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Installation ==
 
-1. Activate the plugin through the 'Plugins' menu in WordPress
-2. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+Upload the plugin to your WordPress website and activate it.
+
+1, 2, 3: You're done!
 
 == Changelog ==
 
@@ -40,5 +41,3 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 = 0.4.0 =
 * Remove internal GitHub Updater logic
-
-`<?php code(); // goes in backticks ?>`

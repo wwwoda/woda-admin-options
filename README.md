@@ -9,7 +9,7 @@ This plugin utilizes the [Carbon Fields](https://carbonfields.net/) WordPress cu
 You can install the plugin by uploading it in the WordPress Admin or via `composer`.
 
 ```bash
-composer requrie woda/wp-admin-options
+composer require woda/wp-admin-options
 ```
 
 If you installed the plugin via `composer` you will have to initialize it yourself to be able to use it. Add this to your theme's function file
